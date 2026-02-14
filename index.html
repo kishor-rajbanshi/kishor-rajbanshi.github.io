@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kishor Rajbanshi · GitHub</title>
+
+    <!-- GitHub official markdown CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="layout">
+
+            <!-- PROFILE -->
+            <aside class="profile">
+                <div class="card">
+                    <img id="avatar" alt="avatar" />
+                    <h1 id="name"></h1>
+                    <h2 id="login"></h2>
+                    <div class="meta" id="bio"></div>
+                    <div class="meta"><button class="view_github_profile" id="view_github_profile">GitHub
+                            Profile</button></div>
+                    <div class="meta" id="stats"></div>
+                    <div class="meta" id="location">location</div>
+                    <div class="meta" id="timezone"></div>
+                    <div class="meta" id="email"></div>
+                    <div class="meta" id="company"></div>
+                    <div class="meta" id="blog"></div>
+                    <div class="meta" id="twitter"></div>
+                    <hr style="border:1px solid #30363d; margin:16px 0" />
+                    <strong class="meta">Gists</strong>
+                    <ul id="gists" style="list-style:none; padding:0; margin:8px 0 0"></ul>
+                    <hr style="border:1px solid #30363d; margin:16px 0" />
+                    <strong class="meta">Repositories</strong>
+                    <ul id="repos" style="list-style:none; padding:0; margin:8px 0 0"></ul>
+                </div>
+            </aside>
+
+            <!-- README -->
+            <main class="content">
+                <div class="card">
+                    <div id="readme" class="markdown-body">Loading…</div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+/* ================= BASE ================= */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #2f81f7;
+    text-decoration: none;
+}
+
+/* ================= LAYOUT ================= */
+.page {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* ================= PROFILE ================= */
+.profile {
+    width: 280px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 16px;
+}
+
+.card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    margin: 16px 0 4px;
+    font-size: 20px;
+}
+
+.profile h2 {
+    margin: 0 0 12px;
+    font-size: 15px;
+    color: #8b949e;
+    font-weight: 400;
+}
+
+.view_github_profile {
+    margin: 15px 0 15px;
+    text-align: center;
+    background-color: #35435b;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    width: 100%;
+}
+
+.view_github_profile:hover {
+    background-color: #3f4f6b;
+}
+
+.meta {
+    font-size: 14px;
+    color: #8b949e;
+    line-height: 1.6;
+    margin-bottom: 6px;
+    word-break: break-word;
+}
+
+/* ================= README ================= */
+.content {
+    flex: 1;
+    min-width: 0;
+    /* CRITICAL: prevents overflow */
+}
+
+.markdown-body {
+    background: transparent;
+    color: #c9d1d9;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+/* Fix GitHub badge / icon backgrounds */
+.markdown-body img {
+    background: transparent !important;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent tables / grids from overflowing */
+.markdown-body table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.markdown-body pre {
+    background-color: #010409;
+    overflow-x: auto;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .profile {
+        position: static;
+        width: 100%;
+    }
+
+    .page {
+        padding: 12px;
+    }
+}
